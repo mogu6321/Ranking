@@ -1,0 +1,74 @@
+body {
+    margin: 0px;
+    background-color: #005c42;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    padding: 10px;
+}
+.title {
+    text-align: center;
+    font-size: 900%;
+    margin-top: 0px;
+    padding: 0;
+    margin-bottom: 15px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+.button {
+    background-color: #005c42;
+    border: none;
+    outline: none;
+}
+.title:visited {
+    color: black;
+}
+#ranking {
+    padding: 15px;
+    border: 1px solid black;
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    white-space: pre;
+}
+#ranking:not(.no1, .no2, .no3) {
+    background-color: #f7f6f5;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 0;
+}
+#ranking.no1 {
+    background: linear-gradient(45deg, #b67b03 0%, #daaf08 45%, #fee9a0 70%, #daaf08 85%, #b67b03 100%);
+    color: #fff;
+}
+#ranking.no2 {
+    background: linear-gradient(135deg, #e2e8f0 0%, #64748b 50%, #f8fafc 100%);
+    color: #fff;
+}
+#ranking.no3 {
+    background: linear-gradient(135deg, #fdba74 0%, #854d0e 50%, #ffedd5 100%);
+    color: #fff;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#input {
+    text-align: center;
+    height: 26px;
+    margin-bottom: 0px;
+}
+dialog {
+    transform-origin: center;
+    transform: scale(2);
+    padding: 8px;
+    border: black solid 2px transparent;
+}
+input {
+    height: 30px;
+}
+input:focus {
+    outline: none;
+}
