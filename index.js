@@ -13,16 +13,18 @@ function player(name, score, time, day) {
     this.time = time;
     this.day = day;
     if (score < 10) {
-        this.score = "     " + score;
+        this.score = "      " + score;
     } else if (score < 100) {
-        this.score = "    " + score;
+        this.score = "     " + score;
     } else if (score < 1000) {
-        this.score = "   " + score;
+        this.score = "    " + score;
     } else if (score < 10000) {
-        this.score = "  " + score;
+        this.score = "   " + score;
     } else if (score < 100000) {
+        this.score = "  " + score;
+    } else if(score < 1000000){
         this.score = " " + score;
-    } else {
+    }else {
         this.score = score;
     }
 }
